@@ -4,9 +4,14 @@
     font-family: "Google Sans", sans-serif;
 }
 
+section {
+    max-width: 60vw;
+    margin: auto;
+}
+
 body {
     background-color: black;
-    
+
 }
 
 .common-btn {
@@ -88,15 +93,15 @@ nav {
     padding-bottom: 15px;
 }
 
-@media (max-width: 768px)  {
-    .header-input{
+@media (max-width: 800px) {
+    .header-input {
         display: flex;
-        flex-direction: column; 
+        flex-direction: column;
         gap: 20px;
     }
 
-    .header-content h1{
-        padding-top: 20px;
+    .header-content h1 {
+        font-size: 40px;
     }
 }
 
@@ -114,6 +119,7 @@ nav {
     border: 1px solid rgb(126, 126, 126);
     border-radius: 5px;
     box-sizing: border-box;
+    color: white;
 }
 
 .header-input input::placeholder {
@@ -127,17 +133,70 @@ nav {
     border: none;
     margin-left: 10px;
     border-radius: 5px;
+    cursor: pointer;
 }
 
 .header-separation {
 
     height: 4px;
     background: linear-gradient(to right, red, blue);
-    filter: drop-shadow(0px 4px 8px rgba(0, 68, 255, 0.95)) 
-            drop-shadow(0px 8px 25px rgba(0, 17, 255, 0.8))
-            drop-shadow(0px 12px 40px rgba(255, 0, 0, 0.6));
+    filter: drop-shadow(0px 4px 8px rgba(0, 68, 255, 0.95)) drop-shadow(0px 8px 25px rgba(0, 17, 255, 0.8)) drop-shadow(0px 12px 40px rgba(255, 0, 0, 0.6));
 
     border-radius: 50%;
     width: 80vw;
     margin: auto;
+}
+
+/* Main section */
+
+/* trending section */
+
+.trending {
+    text-align: left;
+    display: grid;
+    gap: 20px;
+    padding: 4.5rem;
+}
+
+.trending-container {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    padding: 20px 0;
+
+}
+
+.animation-control{
+    display: flex;
+    gap: 30px;
+    width: max-content;
+    animation: scrollInfinite 35s linear infinite;
+}
+
+.animation-control:hover{
+    animation-play-state: paused;
+}
+
+.trending-box img {
+    border-radius: 10px;
+}
+
+.trending-box {
+    filter: grayscale(80%);
+    transition: transform 0.3s ease-in-out;
+    
+}
+
+.trending-box:hover {
+    transform: scale(1.05);
+    filter: grayscale(0%);
+}
+
+@keyframes scrollInfinite {
+    0%{
+        transform: translateX(0);
+    }
+    100%{
+        transform: translateX(-50%);
+    }
 }
