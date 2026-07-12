@@ -1,0 +1,131 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Google Sans", sans-serif;
+}
+
+body {
+    background-color: black;
+    
+}
+
+.common-btn {
+    color: white;
+    background-color: #e50914;
+}
+
+header {
+    background-image: url('./Assest/bg-img.jpg');
+    height: 92vh;
+    position: relative;
+    /* background size make the image responsive */
+    background-size: 100vw;
+    background-position: center;
+
+}
+
+header .box {
+    height: 92vh;
+    width: 100%;
+    /* also can be written inset 0 */
+    background-image: linear-gradient(360deg, rgba(0, 0, 0, 0.8500) 8.000%, rgba(0, 0, 0, 0.8465) 15.67%, rgba(0, 0, 0, 0.8361) 23.33%, rgba(0, 0, 0, 0.8187) 31.00%, rgba(0, 0, 0, 0.7944) 38.67%, rgba(0, 0, 0, 0.7632) 46.33%, rgba(0, 0, 0, 0.7250) 54.00%, rgba(0, 0, 0, 0.6868) 61.67%, rgba(0, 0, 0, 0.6556) 69.33%, rgba(0, 0, 0, 0.6312) 77.00%, rgba(0, 0, 0, 0.6139) 84.67%, rgba(0, 0, 0, 0.6035) 92.33%, rgba(0, 0, 0, 0.6000) 100.0%);
+    position: absolute;
+    top: 0;
+}
+
+.nav-shadow {
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.8000) 0.000%, rgba(0, 0, 0, 0.7889) 8.333%, rgba(0, 0, 0, 0.7556) 16.67%, rgba(0, 0, 0, 0.7000) 25.00%, rgba(0, 0, 0, 0.6222) 33.33%, rgba(0, 0, 0, 0.5222) 41.67%, rgba(0, 0, 0, 0.4000) 50.00%, rgba(0, 0, 0, 0.2778) 58.33%, rgba(0, 0, 0, 0.1778) 66.67%, rgba(0, 0, 0, 0.1000) 75.00%, rgba(0, 0, 0, 0.04444) 83.33%, rgba(0, 0, 0, 0.01111) 91.67%, rgba(0, 0, 0, 0.000) 100.0%);
+}
+
+
+nav {
+    width: 80vw;
+    margin: auto;
+}
+
+.nav-container {
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 24px 10%;
+}
+
+.nav-container {
+    position: relative;
+    z-index: 10;
+}
+
+.nav-btn {
+    padding: 10px 25px;
+    border-radius: 8px;
+    border: none;
+    font-weight: bold;
+
+}
+
+.header-content {
+    height: 80%;
+    position: relative;
+    z-index: 10;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    text-align: center;
+}
+
+.header-content h1 {
+    font-size: 65px;
+    font-weight: 900;
+}
+
+.p1 {
+    font-size: 22px;
+    font-weight: 700;
+    padding-bottom: 15px;
+}
+
+.header-input {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header-input input {
+    width: 450px;
+    padding: 18px 16px;
+    font-size: 17px;
+    background-color: transparent;
+    border: 1px solid rgb(126, 126, 126);
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.header-input input::placeholder {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.header-input button {
+    padding: 13px 24px;
+    font-size: 26px;
+    font-weight: bold;
+    border: none;
+    margin-left: 10px;
+    border-radius: 5px;
+}
+
+.header-separation {
+
+    height: 4px;
+    background: linear-gradient(to right, red, blue);
+    filter: drop-shadow(0px 4px 8px rgba(0, 68, 255, 0.95)) 
+            drop-shadow(0px 8px 25px rgba(0, 17, 255, 0.8))
+            drop-shadow(0px 12px 40px rgba(255, 0, 0, 0.6));
+
+    border-radius: 50%;
+    width: 80vw;
+    margin: auto;
+}
