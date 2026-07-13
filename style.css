@@ -103,6 +103,20 @@ nav {
     .header-content h1 {
         font-size: 40px;
     }
+
+
+}
+
+@media (max-width: 1300px) {
+    .reason-box-container {
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+    }
+
 }
 
 .header-input {
@@ -166,14 +180,14 @@ nav {
 
 }
 
-.animation-control{
+.animation-control {
     display: flex;
     gap: 30px;
     width: max-content;
     animation: scrollInfinite 35s linear infinite;
 }
 
-.animation-control:hover{
+.animation-control:hover {
     animation-play-state: paused;
 }
 
@@ -184,7 +198,7 @@ nav {
 .trending-box {
     filter: grayscale(80%);
     transition: transform 0.3s ease-in-out;
-    
+
 }
 
 .trending-box:hover {
@@ -193,10 +207,58 @@ nav {
 }
 
 @keyframes scrollInfinite {
-    0%{
+    0% {
         transform: translateX(0);
     }
-    100%{
+
+    100% {
         transform: translateX(-50%);
     }
+}
+
+.reason-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.reason-container h1 {
+    color: white;
+    font-weight: 900;
+}
+
+.reason-box {
+    background: linear-gradient(135deg, #1f1e31 0%, #201725 60%, #1c1218 100%);
+    border-radius: 10px;
+    padding: 15px;
+    position: relative;
+}
+
+.reason-box h2 {
+    color: white;
+    padding: 10px 0;
+}
+
+.reason-box p {
+    line-height: 1.4    ;
+    color: rgba(255, 255, 255, 0.7);
+    margin-bottom: 7vw;
+}
+
+.reason-box img {
+    max-width: 60px;
+    max-height: 60px;
+    padding: 15px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+      flex: 1;
+}
+
+.reason-box-container {
+
+    display: flex;
+    justify-content: space-around;
+    align-items: stretch;
+    gap: 20px;
 }
