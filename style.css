@@ -4,7 +4,7 @@
     font-family: "Google Sans", sans-serif;
 }
 
-section {
+section , footer {
     max-width: 60vw;
     margin: auto;
 }
@@ -261,4 +261,33 @@ nav {
     justify-content: space-around;
     align-items: stretch;
     gap: 20px;
+}
+
+footer{
+    height: 15vw;
+    display: flex;
+    flex-direction: column;
+    gap: 20px 0;
+}
+footer h1{
+    padding-top: 30px;
+}
+
+.ques-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.ques-container ul{
+    list-style-type: none;
+}
+
+.ques-container ul li{
+    padding: 8px;
+}
+.ques-container ul li a{
+    color: rgba(255, 255, 255, 0.7);
+    text-decoration-color: rgba(255, 255, 255, 0.7);
+
 }
